@@ -564,3 +564,10 @@ footer img {
     border-radius: 3% 97% 6% 94% / 83% 46% 54% 17%;
     background: linear-gradient(326deg, rgba(251, 212, 201, 0.2007177871148459) 0%, rgba(246, 178, 159, 0.2007177871148459) 50%, rgba(241, 140, 111, 0.20351890756302526) 100%);
 }
+
+.spotify {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 50px;
+}
