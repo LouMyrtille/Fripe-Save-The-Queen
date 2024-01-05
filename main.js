@@ -16,3 +16,30 @@ document.addEventListener('DOMContentLoaded', function () {
         closeIcon.classList.toggle('hidden');
     });
 });
+
+function resizeImage(element) {
+    element.classList.add('resized');
+}
+
+function restoreImage(element) {
+    if (element.classList.contains('resized')) {
+        element.classList.remove('resized');
+    }
+}
+
+
+function play(soundId) {
+    var sound = document.getElementById(soundId);
+    sound.play();
+}
+
+function pause(soundId) {
+    var sound = document.getElementById(soundId);
+    sound.pause();
+}
+
+function restart(soundId) {
+    var sound = document.getElementById(soundId);
+    sound.currentTime = 0; // Set the current time to the beginning
+    sound.play();
+}
