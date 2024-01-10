@@ -17,6 +17,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('background-video');
+    var button = document.getElementById('toggle-button');
+    var isPlaying = false;
+
+    button.addEventListener('click', function () {
+        if (isPlaying) {
+            video.pause();
+            isPlaying = false;
+            button.classList.remove('pause');
+            button.classList.add('play');
+        } else {
+            video.play();
+            isPlaying = true;
+            button.classList.remove('play');
+            button.classList.add('pause');
+        }
+    });
+});
+
 function resizeImage(element) {
     element.classList.add('resized');
 }

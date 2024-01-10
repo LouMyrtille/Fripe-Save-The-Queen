@@ -181,6 +181,30 @@ textarea:not([rows]) {
     z-index: -1;
 }
 
+#toggle-button {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+#toggle-button.play {
+    background-image: url('icons/play-video.png');
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#toggle-button.pause {
+    background-image: url('icons/pause-video.png');
+    background-color: transparent;
+    box-shadow: none;
+}
+
 .button-hamburger {
     display: none;
     float: right;
