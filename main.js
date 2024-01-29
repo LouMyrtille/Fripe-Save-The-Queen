@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('background-video');
     var button = document.getElementById('toggle-button');
-    var isPlaying = false;
+    var isPlaying = true;
 
     button.addEventListener('click', function () {
         if (isPlaying) {
@@ -63,3 +63,4 @@ function restart(soundId) {
     sound.currentTime = 0; // Set the current time to the beginning
     sound.play();
 }
+
